@@ -1,191 +1,203 @@
-<div class="containe">
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item #1
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the
-                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
-                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pets WebApp</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+        /* Color púrpura personalizado */
+        .text-purple {
+            color: rebeccapurple;
+        }
+
+        /* Combinar iconos (si quieres dar estilo especial) */
+        .combined-icon {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-lightning-charge-fill"></i> Pets WebApp
+            </a>
+            <div class="d-flex ms-auto">
+                <button class="btn btn-danger">Login</button>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br><br>
-    <label for="text">Angular Material</label>
-    <br><br><br>
-    <!--Botones de Angular Material-->
-    <section>
-        <div class="example-label">Basic</div>
-        <div class="example-button-row">
-            <button mat-button>Basic</button>
-            <button mat-button color="primary">Primary</button>
-            <button mat-button color="accent">Accent</button>
-            <button mat-button color="warn">Warn</button>
-            <button mat-button disabled>Disabled</button>
-            <a mat-button href="https://www.google.com/" target="_blank">Link</a>
-        </div>
-    </section>
-    <mat-divider></mat-divider>
-    <section>
-        <div class="example-label">Raised</div>
-        <div class="example-button-row">
-            <button mat-raised-button>Basic</button>
-            <button mat-raised-button color="primary">Primary</button>
-            <button mat-raised-button color="accent">Accent</button>
-            <button mat-raised-button color="warn">Warn</button>
-            <button mat-raised-button disabled>Disabled</button>
-            <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-        </div>
-    </section>
-    <mat-divider></mat-divider>
-    <section>
-        <div class="example-label">Stroked</div>
-        <div class="example-button-row">
-            <button mat-stroked-button>Basic</button>
-            <button mat-stroked-button color="primary">Primary</button>
-            <button mat-stroked-button color="accent">Accent</button>
-            <button mat-stroked-button color="warn">Warn</button>
-            <button mat-stroked-button disabled>Disabled</button>
-            <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
-        </div>
-    </section>
-    <mat-divider></mat-divider>
-    <section>
-        <div class="example-label">Flat</div>
-        <div class="example-button-row">
-            <button mat-flat-button>Basic</button>
-            <button mat-flat-button color="primary">Primary</button>
-            <button mat-flat-button color="accent">Accent</button>
-            <button mat-flat-button color="warn">Warn</button>
-            <button mat-flat-button disabled>Disabled</button>
-            <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
-        </div>
-    </section>
-    <mat-divider></mat-divider>
-    <section>
-        <div class="example-label">Icon</div>
-        <div class="example-button-row">
-            <div class="example-flex-container">
-                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-                    <mat-icon>more_vert</mat-icon>
-                </button>
-                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
-                    <mat-icon>home</mat-icon>
-                </button>
-                <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
-                    <mat-icon>menu</mat-icon>
-                </button>
-                <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
-                    <mat-icon>favorite</mat-icon>
-                </button>
-                <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
-                    <mat-icon>open_in_new</mat-icon>
-                </button>
-            </div>
-        </div>
-    </section>
-    <mat-divider></mat-divider>
-    <section>
-        <div class="example-label">FAB</div>
-        <div class="example-button-row">
-            <div class="example-flex-container">
-                <div class="example-button-container">
-                    <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-                        <mat-icon>delete</mat-icon>
-                    </button>
-                </div>
-                <div class="example-button-container">
-                    <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
-                        <mat-icon>bookmark</mat-icon>
-                    </button>
-                </div>
-                <div class="example-button-container">
-                    <button mat-fab color="warn" aria-label="Example icon button with a home icon">
-                        <mat-icon>home</mat-icon>
-                    </button>
-                </div>
-                <div class="example-button-container">
-                    <button mat-fab disabled aria-label="Example icon button with a heart icon">
-                        <mat-icon>favorite</mat-icon>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <mat-divider></mat-divider>
-    <section>
-        <div class="example-label">Mini FAB</div>
-        <div class="example-button-row">
-            <div class="example-flex-container">
-                <div class="example-button-container">
-                    <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-                        <mat-icon>menu</mat-icon>
-                    </button>
-                </div>
-                <div class="example-button-container">
-                    <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
-                        <mat-icon>plus_one</mat-icon>
-                    </button>
-                </div>
-                <div class="example-button-container">
-                    <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
-                        <mat-icon>filter_list</mat-icon>
-                    </button>
-                </div>
-                <div class="example-button-container">
-                    <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
-                        <mat-icon>home</mat-icon>
-                    </button>
-                </div>
-            </div>
-        </div>
+    </nav>
+
+    <!-- Contenido de bienvenida centrado -->
+    <section class="text-center my-5 container">
+        <h5 class="fw-bold">Bienvenido Pets WebApp</h5>
+        <p>
+            Ejemplo de landing page mobile first usando
+            <b>
+                <a href="#" class="text-primary text-decoration-none">Bootstrap 5</a>,
+                <a href="#" class="text-success text-decoration-none">Bootstrap Icons</a>
+            </b>
+            y <b>Angular Material</b>.
+        </p>
+        <button class="btn btn-primary">¡Comenzar ahora!</button>
+        <br /><br />
+        <img src="assets/pets.jpg" alt="Pets" style="max-width: 200px;" />
     </section>
 
-</div>
+    <div class="container py-4">
+        <!-- Header con icono Bootstrap -->
+        <div class="d-flex align-items-center justify-content-center mb-4 flex-column">
+            <i class="bi bi-stars display-4 text-primary"></i>
+            <h1 class="fw-bold text-center mt-2">Bienvenido a la Demo Mobile First</h1>
+            <hr class="w-25" />
+            <p class="text-muted text-center mt-2">
+                Ejemplo de integración de Bootstrap 5 y Bootstrap Icons.
+            </p>
+        </div>
+
+        <!-- Cards informativas -->
+        <div class="row g-3 mb-4">
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-bootstrap-fill display-6 text-purple"></i>
+                        <h5 class="card-title mt-2">Bootstrap 5</h5>
+                        <p class="card-text">Componentes responsivos y utilidades para diseño mobile first.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-gem display-6 text-info"></i>
+                        <h5 class="card-title mt-2">Bootstrap Icons</h5>
+                        <p class="card-text">Iconografía moderna y personalizable para tus interfaces.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <!-- Aquí no podemos usar <mat-icon>, reemplazo por un icono Bootstrap -->
+                        <i class="bi bi-layout-text-window-reverse display-6 text-primary"></i>
+                        <h5 class="card-title mt-2">Angular Material</h5>
+                        <p class="card-text">Componentes UI accesibles y listos para producción.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion Bootstrap 5 -->
+        <div class="accordion mb-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué es Mobile First?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Mobile First</strong> es una estrategia de diseño que prioriza la experiencia en
+                        dispositivos móviles.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Por qué usar Angular Material?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Angular Material</strong> ofrece componentes modernos, accesibles y personalizables para
+                        Angular.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Cómo usar Bootstrap Icons?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Bootstrap Icons</strong> se integran fácilmente con clases <code>bi bi-icon-name</code>.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <!-- Sección de contacto -->
+            <section class="mb-5 contact-section">
+                <h3 class="text-center mb-4">Contacto</h3>
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="tu@correo.com" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí"
+                            required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <br>
+
+
+
+        <!-- Botones Bootstrap simples como ejemplo -->
+        <section class="mb-4 text-center">
+            <h4 class="mb-3"><i class="bi bi-hand-index-thumb"></i> Ejemplo de Botones Bootstrap</h4>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button class="btn btn-primary"><i class="bi bi-house"></i> Inicio</button>
+                <button class="btn btn-secondary"><i class="bi bi-star"></i> Favoritos</button>
+                <button class="btn btn-danger"><i class="bi bi-trash"></i> Eliminar</button>
+                <button class="btn btn-outline-secondary" disabled><i class="bi bi-lock"></i> Bloqueado</button>
+                <a class="btn btn-info" href="https://angular.io/" target="_blank"><i
+                        class="bi bi-box-arrow-up-right"></i> Angular</a>
+            </div>
+        </section>
+
+        <!-- Iconos Bootstrap juntos -->
+        <section class="text-center mt-4">
+            <h5 class="mb-3">Iconos combinados</h5>
+            <i class="bi bi-heart-fill text-danger combined-icon mx-2"></i>
+            <i class="bi bi-lightning-fill text-warning combined-icon mx-2"></i>
+            <i class="bi bi-check-circle-fill text-success combined-icon mx-2"></i>
+            <i class="bi bi-info-circle-fill text-info combined-icon mx-2"></i>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
